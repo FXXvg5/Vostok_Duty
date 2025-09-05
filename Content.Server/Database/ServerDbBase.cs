@@ -141,6 +141,7 @@ using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Shared._RMC14.LinkAccount;
+using Content.Shared._White.Bark;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Database;
@@ -417,7 +418,15 @@ namespace Content.Server.Database
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
-                loadouts
+                loadouts,
+                profile.BarkVoice,
+                new BarkPercentageApplyData()
+                {
+                    Pause = profile.BarkPause,
+                    Pitch = profile.BarkPitch,
+                    PitchVariance = profile.BarkPitchVariance,
+                    Volume = profile.BarkVolume,
+                }
             );
         }
 
@@ -439,6 +448,11 @@ namespace Content.Server.Database
             profile.Width = humanoid.Width; // Goobstation: port EE height/width sliders
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
+            profile.BarkVoice = humanoid.BarkVoice;
+            profile.BarkPause = humanoid.BarkSettings.Pause;
+            profile.BarkPitch = humanoid.BarkSettings.Pitch;
+            profile.BarkPitchVariance = humanoid.BarkSettings.PitchVariance;
+            profile.BarkVolume = humanoid.BarkSettings.Volume;
             profile.Gender = humanoid.Gender.ToString();
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();
@@ -501,6 +515,11 @@ namespace Content.Server.Database
 
                 profile.Loadouts.Add(dz);
             }
+
+            profile.BarkPause = humanoid.BarkSettings.Pause;
+            profile.BarkPitch = humanoid.BarkSettings.Pitch;
+            profile.BarkPitchVariance = humanoid.BarkSettings.PitchVariance;
+            profile.BarkVolume = humanoid.BarkSettings.Volume;
 
             return profile;
         }

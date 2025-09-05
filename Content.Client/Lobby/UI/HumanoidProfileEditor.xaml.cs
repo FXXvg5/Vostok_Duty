@@ -570,6 +570,12 @@ namespace Content.Client.Lobby.UI
 
             #endregion Eyes
 
+            #region Bark
+
+            InitializeBark();
+
+            #endregion Bark
+
             #endregion Appearance
 
             #region Jobs
@@ -970,6 +976,7 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsFacialHair();
             UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
             UpdateWeight(); // Goobstation: port EE height/width sliders
+            UpdateBarksControl(); // Reserve Station: Port WWDP Bark voice settings
 
             RefreshAntags();
             RefreshJobs();
@@ -1429,6 +1436,7 @@ namespace Content.Client.Lobby.UI
             }
 
             UpdateGenderControls();
+            UpdateBarksControl(); // Reserve Station: Port WWDP bark voices based on sex
             Markings.SetSex(newSex);
             ReloadPreview();
         }

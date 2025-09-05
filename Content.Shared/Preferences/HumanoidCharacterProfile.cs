@@ -69,6 +69,7 @@ using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Roles;
 using Content.Shared.Traits;
+using Content.Shared._White.Bark;
 using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -153,6 +154,12 @@ namespace Content.Shared.Preferences
         public float Width { get; private set; }
         // end Goobstation: port EE height/width sliders
 
+        [DataField]
+        public ProtoId<BarkVoicePrototype> BarkVoice { get; private set; } = "Txt1";
+
+        [DataField]
+        public BarkPercentageApplyData BarkSettings { get; private set; } = new();
+
         /// <summary>
         /// <see cref="Appearance"/>
         /// </summary>
@@ -213,7 +220,9 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts)
+            Dictionary<string, RoleLoadout> loadouts,
+            ProtoId<BarkVoicePrototype>? barkVoice = null,
+            BarkPercentageApplyData? barkSettings = null)
 
         {
             Name = name;
@@ -232,6 +241,8 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
+            BarkVoice = barkVoice ?? "Txt1";
+            BarkSettings = barkSettings ?? new BarkPercentageApplyData();
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -265,7 +276,9 @@ namespace Content.Shared.Preferences
                 other.PreferenceUnavailable,
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
-                new Dictionary<string, RoleLoadout>(other.Loadouts))
+                new Dictionary<string, RoleLoadout>(other.Loadouts),
+                other.BarkVoice,
+                other.BarkSettings)
         {
         }
 
@@ -395,6 +408,16 @@ namespace Content.Shared.Preferences
             return new(this) { Width = width };
         }
         // end Goobstation: port EE height/width sliders
+
+        public HumanoidCharacterProfile WithBarkVoice(ProtoId<BarkVoicePrototype> barkVoice)
+        {
+            return new(this) { BarkVoice = barkVoice };
+        }
+
+        public HumanoidCharacterProfile WithBarkSettings(BarkPercentageApplyData barkSettings)
+        {
+            return new(this) { BarkSettings = barkSettings };
+        }
 
         public HumanoidCharacterProfile WithCharacterAppearance(HumanoidCharacterAppearance appearance)
         {
