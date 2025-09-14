@@ -60,7 +60,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true # secret
   description: survival-description
   rules:
     # - MeteorSwarmScheduler Goobstation - nuh uh
@@ -69,6 +69,7 @@
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: KesslerSyndrome
@@ -77,7 +78,7 @@
     - junk
     - meteorhell
   name: kessler-syndrome-title
-  showInVote: false # secret
+  showInVote: true # secret
   description: kessler-syndrome-description
   rules:
     # - KesslerSyndromeScheduler Goobstation - nuh uh
@@ -85,6 +86,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: AllAtOnce
@@ -92,7 +94,7 @@
   - all
   name: all-at-once-title
   description: all-at-once-description
-  showInVote: false
+  showInVote: true
   rules:
     - Nukeops
     - Traitor
@@ -109,6 +111,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: AllerAtOnce
@@ -119,7 +122,7 @@
   - punishment
   name: aller-at-once-title
   description: aller-at-once-description
-  showInVote: false #Please god dont do this
+  showInVote: true #Please god dont do this
   rules:
     - Nukeops
     - Traitor
@@ -140,6 +143,7 @@
     - BasicRoundstartVariation
     - Changeling # Goobstation - changeling playtest
     - LavalandStormScheduler # Lavaland Change
+  minPlayers: 15
 
 - type: gamePreset
   id: Extended
@@ -147,7 +151,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: false #2boring2vote
+  showInVote: true #2boring2vote
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -155,6 +159,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 1
 
 - type: gamePreset
   id: Greenshift
@@ -162,12 +167,13 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true #4boring4vote
   description: greenshift-description
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 1
 
 - type: gamePreset
   id: Secret
@@ -226,7 +232,7 @@
     - tator
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true
   rules:
   - DummyNonAntagChance
   - Traitor
@@ -236,6 +242,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: Deathmatch
@@ -249,6 +256,7 @@
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
+  minPlayers: 10
 
 - type: gamePreset
   id: Nukeops
@@ -256,7 +264,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
     - Nukeops
   #  - SubGamemodesRule #Reserve edit - no thieves on nukeops
@@ -266,6 +274,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: Revolutionary
@@ -275,7 +284,7 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: false
+  showInVote: true
   rules:
   - DummyNonAntagChance
   - Revolutionary
@@ -285,6 +294,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: Zombie
@@ -296,7 +306,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true
   rules:
   - Zombie
   - BasicStationEventScheduler
@@ -304,6 +314,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10
 
 - type: gamePreset
   id: Zombieteors
@@ -313,7 +324,7 @@
   - meteombies
   name: zombieteors-title
   description: zombieteors-description
-  showInVote: false
+  showInVote: true
   rules:
   - Zombie
   - BasicStationEventScheduler
@@ -321,3 +332,4 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  minPlayers: 10

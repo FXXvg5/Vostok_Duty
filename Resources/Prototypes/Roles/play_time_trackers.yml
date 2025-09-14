@@ -91,6 +91,9 @@
   id: JobERTLeader
 
 - type: playTimeTracker
+  id: JobERTDSO
+
+- type: playTimeTracker
   id: JobERTMedical
 
 - type: playTimeTracker

@@ -133,22 +133,17 @@
     - /Audio/Lobby/atomicamnesiammx.ogg
     # Goobstation - Custom lobby music
     - /Audio/Lobby/skubstep.ogg
-    - /Audio/Lobby/sneedsfeedandseed.ogg
     - /Audio/Lobby/clownalwayswins.ogg
     - /Audio/Lobby/clownwmv.ogg
-    - /Audio/Lobby/dawsonschristian.ogg
     - /Audio/Lobby/thewizard.ogg
     - /Audio/Lobby/skubstub.ogg
     - /Audio/Lobby/space_radiation.ogg
-    - /Audio/Lobby/redsun.ogg
-    - /Audio/Lobby/chollima.ogg
     - /Audio/Lobby/monument.ogg
     - /Audio/Lobby/marhaba.ogg
-    - /Audio/Lobby/the_future_soon.ogg
-    - /Audio/Lobby/horn.ogg
-    - /Audio/Lobby/retour.ogg
   # Reserve
     - /Audio/_Reserve/Lobby/double-u.ogg
     - /Audio/_Reserve/Lobby/neon.ogg
     - /Audio/Corvax/Lobby/service.ogg
     - /Audio/Corvax/Lobby/nodecision.ogg
+  #XD
+    - /Audio/Lobby/Phoron_will_make_us_rich.ogg

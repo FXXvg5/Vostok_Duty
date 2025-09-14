@@ -549,6 +549,18 @@
       - state: ertleader
 
 - type: entity
+  id: SpawnPointERTBSO
+  parent: SpawnPointJobBase
+  name: ERTBSO
+  components:
+  - type: SpawnPoint
+    job_id: ERTBSO
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertleader
+
+- type: entity
   id: SpawnPointERTChaplain
   parent: SpawnPointJobBase
   name: ERTchaplain

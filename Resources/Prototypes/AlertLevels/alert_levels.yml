@@ -150,6 +150,19 @@
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
+      #XD
+    gammaplus:
+      announcement: alert-level-gammaplus-announcement
+      selectable: false
+      sound:
+        path: /Audio/Misc/gamma+.ogg
+        params:
+          volume: -2
+      disableSelection: true
+      color: MediumVioletRed
+      emergencyLightColor: MediumVioletRed
+      forceEnableEmergencyLights: true
+      #XD
     delta:
       announcement: alert-level-delta-announcement
       selectable: false

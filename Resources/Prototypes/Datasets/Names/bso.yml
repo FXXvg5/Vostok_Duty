@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: NamesBSO
+  values:
+    prefix: names-BSO-first-dataset-
+    count: 2
