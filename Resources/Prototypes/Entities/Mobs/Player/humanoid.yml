@@ -269,6 +269,45 @@
       - NamesMilitaryFirstLeader
       - NamesMilitaryLast
       nameFormat: name-format-ert
+###
+- type: entity
+  id: RandomHumanoidSpawnerERTDSO
+  name: Оперативник Синий Щит
+  suffix: ERTRole, Basic, BlueShield
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleader
+    - type: RandomMetadata
+      nameSegments:
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
+      nameFormat: name-format-ert
+    - type: RandomHumanoidSpawner
+      settings: ERTDSO
+
+- type: randomHumanoidSettings
+  id: ERTDSO
+  speciesWhitelist: Human # ReserveStation
+  parent: CentcommHumanoid # Goobstation
+  components:
+    - type: GhostRole
+      name: Оперативник Синий щит
+      description: Вы крутой Оперативник и ваша цель помочь станции любой ценой.
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTBSO
+    - type: Loadout
+      prototypes: [ NanotrasenblueshieldoperativeGear ]
+      roleLoadout: [ RoleSurvivalEVA ]
+    - type: AutoImplant
+      implants: [ FreedomImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm ] # Goobstation
+    - type: RandomMetadata
+      nameSegments:
+      - NamesBSO
+      - NamesMilitaryLast
+      nameFormat: name-format-ert
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA

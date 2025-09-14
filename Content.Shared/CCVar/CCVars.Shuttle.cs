@@ -89,7 +89,7 @@ public sealed partial class CCVars
     ///     How long the warmup time before FTL start should be.
     /// </summary>
     public static readonly CVarDef<float> FTLStartupTime =
-        CVarDef.Create("shuttle.startup_time", 7.5f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.startup_time", 6.5f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long a shuttle spends in FTL.
@@ -138,26 +138,26 @@ public sealed partial class CCVars
     ///     If the emergency shuttle can't dock at a priority port, the dock time will be multiplied with this value.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleDockTimeMultiplierOtherDock =
-        CVarDef.Create("shuttle.emergency_dock_time_multiplier_other_dock", 2f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_dock_time_multiplier_other_dock", 1.2f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If the emergency shuttle can't dock at all, the dock time will be multiplied with this value.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleDockTimeMultiplierNoDock =
-        CVarDef.Create("shuttle.emergency_dock_time_multiplier_no_dock", 3f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_dock_time_multiplier_no_dock", 1.3f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How long after the console is authorized for the shuttle to early launch.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleAuthorizeTime =
-        CVarDef.Create("shuttle.emergency_authorize_time", 25f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_authorize_time", 5f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The minimum time for the emergency shuttle to arrive at centcomm.
     ///     Actual minimum travel time cannot be less than <see cref="ShuttleSystem.DefaultArrivalTime"/>
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleMinTransitTime =
-        CVarDef.Create("shuttle.emergency_transit_time_min", 30f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.emergency_transit_time_min", 10f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The maximum time for the emergency shuttle to arrive at centcomm.
@@ -211,7 +211,7 @@ public sealed partial class CCVars
     /// </summary>
     [CVarControl(AdminFlags.VarEdit)]
     public static readonly CVarDef<bool> ImpactEnabled =
-        CVarDef.Create("shuttle.impact.enabled", true, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.enabled", false, CVar.SERVERONLY);
 
     /// <summary>
     /// Minimum impact inertia to trigger special shuttle impact behaviors when impacting slower than MinimumImpactVelocity.

@@ -335,3 +335,30 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
     shoes: ClothingShoesColorBlack
+
+###BS operavive
+- type: startingGear
+  id: NanotrasenblueshieldoperativeGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueshieldOfficer
+    back: ClothingBackpackDuffelMilitary
+    shoes: ClothingShoesBootsMagAdv
+    eyes: ClothingEyesGlassesCentComm
+    id: ERTLeaderPDA
+    head: ClothingHeadHatBeretMerc
+    mask: ClothingMaskGasERT
+    outerClothing: ClothingOuterHardsuitBlueshieldLight
+    ears: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    pocket1: TelescopicShield
+    pocket2: WeaponPulsePistol
+  storage:
+    back:
+    - WeaponRifleAk
+    - MagazineLightRifle
+    - MagazineLightRifle
+    - WeaponPulseCarbineAdvanced
+    - MedkitCombatFilled
+    - MedkitCombatFilled
+    - MedkitCombatFilledDS
+    - RCDRecharging

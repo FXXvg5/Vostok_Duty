@@ -13,7 +13,7 @@
   kind: source
   path: "/Textures/Shaders/outline.swsl"
   params:
-    outline_color: "#ff0000"
+    outline_color: "#FF000055"
     light_boost: 2
     light_gamma: 1.5
     light_whitepoint: 48
@@ -23,7 +23,7 @@
   kind: source
   path: "/Textures/Shaders/outline.swsl"
   params:
-    outline_color: "#ae00ff"
+    outline_color: "#0033ff54"
     light_boost: 2
     light_gamma: 0.9
     light_whitepoint: 1

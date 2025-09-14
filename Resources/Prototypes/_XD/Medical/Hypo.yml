@@ -1,0 +1,30 @@
+- type: entity
+  name: Особый Гипоспрей с Элитными Стимулянтами
+  parent: [BaseItem, BaseCentcommContraband]
+  description: С помощью блюспейс технологий Крайне Медленно Синтезирует Элитные Стимулянты, Один Вспрыск = 5 Унций.
+  id: EliteHypo
+  suffix: ERT GAMMA+/Оперативник Синий Щит
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/centcomm_hypo.rsi
+    state: hypo
+  - type: Item
+    sprite: _Goobstation/Objects/Specific/Medical/centcomm_hypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 150
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Omniplus
+        Quantity: 0.50
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+    transferAmount: 5.0
+  - type: UseDelay
+    delay: 0.1
+
