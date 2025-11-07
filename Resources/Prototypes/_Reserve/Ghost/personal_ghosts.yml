@@ -4,15 +4,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# Abstract entity prototype to force transparency on all custom ghosts
-- type: entity
-  abstract: true
-  parent: MobObserver
-  id: MobObserverCkey
-  components:
-  - type: Sprite
-    color: "#ffffffcc" # 0.8 alpha
-
 - type: customGhost
   id: ca4tuk-ghost
   category: personal
@@ -28,7 +19,7 @@
   id: MobObserverCkeyCa4tuk
   components:
   - type: Sprite
-    sprite: _Reserve/CustomGhosts/ca4tuk-ghost.rsi
+    sprite: _Reserve/Ghosts/ca4tuk-ghost.rsi
     color: "#F2F2F2"
 
 - type: customGhost
@@ -46,7 +37,7 @@
   id: MobObserverCkeySvarshik
   components:
   - type: Sprite
-    sprite: _Reserve/CustomGhosts/svarshik-ghost.rsi
+    sprite: _Reserve/Ghosts/svarshik-ghost.rsi
     color: "#999999"
 
 - type: customGhost
@@ -64,7 +55,7 @@
   id: MobObserverCkeyDuga
   components:
   - type: Sprite
-    sprite: _Reserve/CustomGhosts/duga-ghost.rsi
+    sprite: _Reserve/Ghosts/duga-ghost.rsi
     color: "#E6E6E6"
 
 - type: customGhost
@@ -82,7 +73,7 @@
   id: MobObserverCkeyFXX
   components:
   - type: Sprite
-    sprite: _Reserve/CustomGhosts/fxx-ghost.rsi
+    sprite: _Reserve/Ghosts/fxx-ghost.rsi
     color: "#B3B3B3"
 
 - type: customGhost
@@ -100,7 +91,7 @@
   id: MobObserverCkeyAlreadyTaken
   components:
   - type: Sprite
-    sprite: _Reserve/CustomGhosts/already-taken-ghost.rsi
+    sprite: _Reserve/Ghosts/already-taken-ghost.rsi
     color: "#CCCCCC"
 
 - type: customGhost

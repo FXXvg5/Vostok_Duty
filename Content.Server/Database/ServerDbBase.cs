@@ -292,6 +292,7 @@ namespace Content.Server.Database
                 UserId = userId.UserId,
                 SelectedCharacterSlot = 0,
                 AdminOOCColor = Color.Red.ToHex(),
+                GhostId = "", // WWDP EDIT
                 ConstructionFavorites = [],
             };
 
