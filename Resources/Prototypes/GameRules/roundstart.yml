@@ -167,11 +167,9 @@
     - id: Heretic # goob edit
       prob: 0.2
     - id: Devil # Goob
-      prob: 0.02
-    - id: Shadowling # Goob
-      prob: 0.09
-    - id: SubWizard
       prob: 0.05
+    - id: Shadowling # Goob
+      prob: 0.11
 
 - type: entity
   parent: BaseGameRule

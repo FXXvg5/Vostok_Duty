@@ -311,8 +311,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(cosmiccult);
         // End DeltaV Additions
-	
-	// Harmony start
+	    // Harmony start
         var conspiratorName = Loc.GetString("admin-verb-text-make-conspirator");
         Verb conspirator = new()
         {
